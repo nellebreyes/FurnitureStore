@@ -20,7 +20,7 @@ body{
     .main-container{
         display: grid;
         grid-template-columns: minmax(5rem,1fr) repeat(8,minmax(min-content,1fr)) minmax(5rem,1fr);
-        grid-template-rows: repeat(3,min-content) 70vh min-content;
+        grid-template-rows: repeat(3,min-content) 70vh repeat(5,min-content);
         row-gap: 1.6rem;
         margin-top: 1.6rem;
         padding:.5rem;
@@ -467,7 +467,69 @@ body{
     transform: translateX(-50%);
     cursor: pointer;
 }
-/*end of on-sale*/
+/*end of on-sale ended at 5/6*/
 
 /*best-selling*/
+
+.best-selling{
+    padding-top: 6rem;
+    grid-column: 2/10;
+    grid-row: 6/7;
+}
+
+.best-selling h2{
+    color:#12376e;
+    font-size: 4rem; 
+    padding-bottom: 3rem; 
+    text-align: center;
+}
+
+.best-selling-cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(40rem,1fr));
+    column-gap: 1rem;
+}
+
+.best-selling-card{
+    color: aliceblue;
+    border-radius: .5rem;
+    overflow: hidden;
+    border: 1 px solid #12376e;
+    box-shadow: .3rem .3rem 10px #888;
+    margin:2.5rem;
+    text-align: center;
+    background-color:rgba(88, 103, 117,.2);
+
+}
+
+.best-selling-card img{
+    width:100%;
+    object-fit: cover;
+}
+
+.best-selling-card h3{
+    padding: 1.2rem 1rem;
+    font-size: 2.3rem;
+    color:#586775;
+}
+
+.best-selling-card button{
+    background-color: rgba(88, 103, 117,.9);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    color: #d6d8da;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: .07rem;
+    font-weight: 500;
+}
+
+.best-selling-card button:hover{
+    background-color: rgba(88, 103, 117,1);
+
+}
 /*end of best-selling*/
