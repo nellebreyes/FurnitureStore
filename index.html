@@ -9,6 +9,42 @@
     <title>Furniture Store</title>
 </head>
 <body>
+    <!--modal-box-->
+    <input type="checkbox" hidden  id="sign-up-log-in">
+    <section class="modal-box">
+        <input type="checkbox" hidden id="modal-box-show-form">
+        <div class="modal-box-btns-wrapper">
+            <label for="modal-box-show-form" class="modal-label modal-sign-up-label"> 
+                SIGN&nbsp;UP
+            </label>
+            <label for="modal-box-show-form" class="modal-label modal-log-in-label"> 
+                LOG&nbsp;IN
+            </label>
+            <button class="modal-exit-btn"><label for="sign-up-log-in" class="lbl-exit-btn">&times;</label></button>
+        </div>
+        <div class="modal-box-forms-wrapper">
+            <form class="modal-sign-up-form">
+                <div class="name-wrapper">
+                    <input type="text" class="name-wrapper-name" placeholder="First Name">
+                    <input type="text" class="name-wrapper-name" placeholder="Last Name">
+                </div>
+                <div class="therest-wrapper">
+                    <input type="text" class="modal-sign-up email" placeholder="email">
+                    
+                    <input type="password" class="modal-sign-up password" placeholder="Create password">
+
+                    <input type="password" class="modal-sign-up confirm-password" placeholder="Re-type password">
+                </div>
+                <button class="modal-sign-up-form-btn">SUBMIT</button>
+            </form>
+            <form class="modal-log-in-form">
+                <input type="text" class="modal-sign-up" placeholder="email">
+                <input type="password" class="modal-sign-up" placeholder="Type password">
+                <button class="modal-sign-up-form-btn">LOG&nbsp;IN</button>
+            </form>
+        </div>
+    </section>
+    <!--end of modal-box-->
     <div class="main-container">
         <!--first-nav-->
         <ul class="social-list">
@@ -28,7 +64,7 @@
         <nav class="first-nav">
             <ul class="first-nav-list">
                 <li class="first-nav-item">
-                    <a class="first-nav-link"><i class="fas fa-sign-in-alt"></i>Sign Up / Log In</a>
+                    <label for="sign-up-log-in"><a class="first-nav-link"><i class="fas fa-sign-in-alt"></i>Sign Up / Log In</a></label>
                 </li>
                 <li class="first-nav-item">
                     <a class="first-nav-link"><i class="fa-solid fa-cart-shopping"></i>Cart(<span>2 items</span>)</a>
